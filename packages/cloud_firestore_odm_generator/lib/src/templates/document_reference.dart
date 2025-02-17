@@ -208,7 +208,7 @@ Future<void> set(
   final json = $json;
 
   final castedReference = reference.withConverter<Map<String, dynamic>>(
-    fromFirestore: (snapshot, options) => throw UnimplementedError(),
+    fromFirestore: (snapshot, options) => {},
     toFirestore: (value, options) => value,
   );
   return castedReference.set(json, options);
@@ -223,7 +223,7 @@ void transactionSet(
   final json = $json;
 
   final castedReference = reference.withConverter<Map<String, dynamic>>(
-    fromFirestore: (snapshot, options) => throw UnimplementedError(),
+    fromFirestore: (snapshot, options) => {},
     toFirestore: (value, options) => value,
   );
 
@@ -239,7 +239,7 @@ void batchSet(
   final json = $json;
 
   final castedReference = reference.withConverter<Map<String, dynamic>>(
-    fromFirestore: (snapshot, options) => throw UnimplementedError(),
+    fromFirestore: (snapshot, options) => {},
     toFirestore: (value, options) => value,
   );
   
